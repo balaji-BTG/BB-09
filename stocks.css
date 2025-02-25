@@ -1,0 +1,81 @@
+/* Ensure body has no margin or padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.stock {
+    position: relative;
+    height: 100vh;
+}
+
+/* Background image styles */
+.stock-background {
+    background-image: url('https://www.nelsoncap.com/wp-content/uploads/2023/07/AdobeStock_566651240-scaled.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: absolute; /* Make sure the background covers the entire section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Ensure the background stays behind other content */
+}
+
+/* Title styles */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+   
+    
+}
+
+/* Stock data text */
+#stocks {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Icons container */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 1; /* Ensure icons are above the background */
+}
+
+/* Icon styles */
+.icon {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Icon sizes */
+.icon i {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for icons */
+.icon:hover {
+    color: #f12121; /* Change icon color on hover */
+}
+
+.icon:hover i {
+    transform: scale(1.2);
+    color: #f12121; /* Add scale effect on hover */
+}
