@@ -78,3 +78,12 @@ input {
         padding: 20px;
     }
 }
+.crypto-box, .stock-box {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
